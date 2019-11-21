@@ -1,4 +1,8 @@
-import ai
+
+from util import tah
+from ai import tah_pocitace
+
+from random import randrange
 def vyhodnot(pole):
     'dostane řetězec s herním polem 1-D piškvorek a vrátí jednoznakový řetězec podle stavu hry'
 
@@ -11,10 +15,6 @@ def vyhodnot(pole):
     else:
         return '!'
 
-def tah(pole, cislo_policka, symbol):
-    "Vrátí herní pole s daným symbolem umístěným na danou pozici"
-
-    return pole[:cislo_policka] + symbol + pole[cislo_policka + 1:]
 
 def tah_hrace(pole):
     "Vrátí herní pole se zaznamenaným tahem hráče"
@@ -24,7 +24,6 @@ def tah_hrace(pole):
         if cislo_policka >= 0 and cislo_policka < 20 and '-' == pole[cislo_policka]:
             return tah(pole, cislo_policka, 'x')
 
-from random import randrange
 
 def piskvorky1d(pole):
     

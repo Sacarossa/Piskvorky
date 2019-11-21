@@ -1,3 +1,7 @@
+
+from util import tah
+from random import randrange
+
 def tah_pocitace(pole):
     "Vrátí herní pole se zaznamenaným tahem počítače"
     while True:
