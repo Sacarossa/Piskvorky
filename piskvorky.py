@@ -29,8 +29,9 @@ def piskvorky1d(pole):
     
     while True:
         pole = tah_hrace(pole)
-        pole = tah_pocitace(pole)
+        pole = tah_pocitace(pole, 'o')
         print(pole)
+        print('01234567890123456789')
         stav = vyhodnot(pole)
         if stav == 'x':
             print('Vyhrál jsi.')
